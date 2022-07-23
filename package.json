@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
+  }
+}
