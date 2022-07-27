@@ -1,0 +1,46 @@
+h1 {
+  text-align: center;
+}
+
+#todo-app {
+  width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.icon:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task {
+  margin: 15px 0;
+  display: flex;
+  width: 100%;
+}
+
+.task > span {
+  width: 100%;
+}
+
+.user-action-area {
+  display: flex;
+}
+
+.input-form {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+}

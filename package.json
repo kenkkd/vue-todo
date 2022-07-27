@@ -1,9 +1,6 @@
 {
-  "dependencies": {
-    "tailwind": "^4.0.0",
-    "vue": "^3.2.37"
-  },
   "devDependencies": {
+    "eslint-plugin-vue": "^9.3.0",
     "standard": "^17.0.0"
   }
 }
