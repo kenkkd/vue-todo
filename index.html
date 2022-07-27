@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>TODOアプリ</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<h1>TODO LIST</h1>
+<div id="todo-app">
+  <ul class="task-list" v-if="this.tasks.length">
+    <li class="task" v-for="task in tasks">
+      <input class="input-form" :disabled="!isEditable" type="text" @keyup=saveTasks v-model="task.content">
+      <img
+        class="icon"
+        src="./assets/img/icons/delete.svg"
+        @click="deleteTask(task.id)"
+      >
+    </li>
+  </ul>
+  <span v-else>タスクがありません</span>
+  <div class="user-action-area">
+    <input
+      placeholder="タスクを入力"
+      type="text"
+      v-model="inputTask"
+      class="input-form"
+    >
+    <img
+      class="icon"
+      src="./assets/img/icons/add.svg"
+      @click="addTask"
+    >
+    <img
+      class="icon"
+      src="./assets/img/icons/edit.svg"
+      @click="switchEditable"
+    >
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
